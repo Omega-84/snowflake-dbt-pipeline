@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+snowflake_data_engineer_credentials.csv
+snowflake_data_engineer_accessKeys.csv
+*credentials*.csv
+*accessKeys*.csv
+
+notebooks/*
+
+.claude
