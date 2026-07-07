@@ -221,6 +221,10 @@ snowflake_data_engineer_credentials.csv
 snowflake_data_engineer_accessKeys.csv
 *credentials*.csv
 *accessKeys*.csv
+*.p8
+*.pem
+*.key
+*.pub
 
 notebooks/*
 

@@ -7,7 +7,11 @@ requires-python = ">=3.13"
 dependencies = [
     "awscli>=1.45.40",
     "boto3>=1.43.40",
+    "dbt-core>=1.11.12",
+    "dbt-snowflake>=1.11.6",
     "jupyter>=1.1.1",
+    "snowflake>=1.12.1",
+    "snowflake-snowpark-python>=1.5.0,<2.0.0",
 ]
 
 [build-system]
