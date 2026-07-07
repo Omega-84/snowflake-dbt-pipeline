@@ -229,3 +229,5 @@ snowflake_data_engineer_accessKeys.csv
 notebooks/*
 
 .claude
+.vscode/*
+.bruin.yml

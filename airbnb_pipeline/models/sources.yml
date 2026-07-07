@@ -1,0 +1,9 @@
+sources:
+  - name: staging
+    description: "Raw data sources for NY Taxi trips"
+    database: AIRBNB_PP
+    schema: staging
+    tables:
+      - name: listings  
+      - name: bookings
+      - name: hosts
