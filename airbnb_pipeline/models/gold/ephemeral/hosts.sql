@@ -4,9 +4,9 @@
     )
 }}
 
-WITH hosts AS 
+WITH hosts AS
 (
-    SELECT 
+    SELECT DISTINCT
         HOST_ID,
         HOST_NAME,
         HOST_SINCE,

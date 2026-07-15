@@ -64,3 +64,12 @@ bookings_table = Table(
 )
 root.databases[DATABASE_NAME].schemas[SCHEMA_NAME].tables.create(bookings_table, mode=CreateMode.if_not_exists)
 
+STAGE_NAME = "RAW_S3_STAGE"
+STORAGE_INTEGRATION_NAME = "s3_int"
+
+session.sql(f"""
+    CREATE STAGE IF NOT EXISTS {DATABASE_NAME}.{SCHEMA_NAME}.{STAGE_NAME}
+    URL = 's3://snowflake-dbt-pp/raw-source-data/'
+    STORAGE_INTEGRATION = {STORAGE_INTEGRATION_NAME}
+""").collect()
+

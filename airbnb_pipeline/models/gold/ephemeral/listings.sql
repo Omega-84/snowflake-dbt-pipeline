@@ -4,9 +4,9 @@
     )
 }}
 
-WITH listings AS 
+WITH listings AS
 (
-    SELECT 
+    SELECT DISTINCT
         LISTING_ID,
         PROPERTY_TYPE,
         ROOM_TYPE,
